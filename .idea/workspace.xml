@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5da46d1e-7d98-4c52-88c7-b1f14d7de1ed" name="Default Changelist" comment="" />
+    <list default="true" id="5da46d1e-7d98-4c52-88c7-b1f14d7de1ed" name="Default Changelist" comment="Created empty Ionic React Project">
+      <change beforePath="$PROJECT_DIR$/src/components/ExploreContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ExploreContainer.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +21,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="C:\Users\mmuth\WebstormProjects\AnExperiment\node_modules\typescript\lib" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -28,11 +31,40 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1609658430333</updated>
-      <workItem from="1609658431384" duration="1203000" />
+      <workItem from="1609658431384" duration="1529000" />
     </task>
+    <task id="LOCAL-00001" summary="Created empty Ionic React Project">
+      <created>1609659705905</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1609659705905</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Created empty Ionic React Project" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created empty Ionic React Project" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="552" y="312" key="Vcs.Push.Dialog.v2" timestamp="1609659720284">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="552" y="312" key="Vcs.Push.Dialog.v2/0.0.1920.1160@0.0.1920.1160" timestamp="1609659720284" />
   </component>
 </project>
