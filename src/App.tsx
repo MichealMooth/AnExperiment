@@ -22,12 +22,21 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+import CreateExperiment from "./pages/CreateExperiment";
+import Test from "./pages/Test";
+import TestList from "./pages/TestList";
+import TestDetail from "./pages/TestDetail";
 
 const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
       <IonRouterOutlet>
         <Route path="/home" component={Home} exact={true} />
+        <Route path="/createExperiment" component={CreateExperiment} exact={true} />
+        <Route path="/test" component={Test} exact={true} />
+        <Route path="/testList" component={TestList} exact={true} />
+        <Route path="/testDetail" component={TestDetail} exact={true} />
+
         <Route exact path="/" render={() => <Redirect to="/home" />} />
       </IonRouterOutlet>
     </IonReactRouter>
