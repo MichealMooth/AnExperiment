@@ -12,7 +12,7 @@ import {
 import React from 'react';
 import ExploreContainer from '../components/ExploreContainer';
 import './Home.css';
-import {add, star} from "ionicons/icons";
+import {add} from "ionicons/icons";
 
 const Home: React.FC = () => {
   return (

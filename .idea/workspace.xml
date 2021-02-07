@@ -10,12 +10,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5da46d1e-7d98-4c52-88c7-b1f14d7de1ed" name="Default Changelist" comment="Erstellen aller notwendigen Oberflächen">
+    <list default="true" id="5da46d1e-7d98-4c52-88c7-b1f14d7de1ed" name="Default Changelist" comment="Navigation und erste Navigation zu Experiment erstellen">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ExploreContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ExploreContainer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/CreateExperiment.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/CreateExperiment.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/CreateExperimentContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreateExperimentContainer.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +90,7 @@
       <workItem from="1611999771364" duration="6863000" />
       <workItem from="1612605757759" duration="2233000" />
       <workItem from="1612608197718" duration="1069000" />
-      <workItem from="1612609543356" duration="3252000" />
+      <workItem from="1612609543356" duration="10093000" />
     </task>
     <task id="LOCAL-00001" summary="Created empty Ionic React Project">
       <created>1609659705905</created>
@@ -114,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1612607116985</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Navigation und erste Navigation zu Experiment erstellen">
+      <created>1612612878694</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1612612878694</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,7 +141,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Created empty Ionic React Project" />
     <MESSAGE value="Erstellen aller notwendigen Oberflächen" />
-    <option name="LAST_COMMIT_MESSAGE" value="Erstellen aller notwendigen Oberflächen" />
+    <MESSAGE value="Navigation und erste Navigation zu Experiment erstellen" />
+    <option name="LAST_COMMIT_MESSAGE" value="Navigation und erste Navigation zu Experiment erstellen" />
   </component>
   <component name="WindowStateProjectService">
     <state x="102" y="110" width="1720" height="960" key="DiffContextDialog" timestamp="1612610116708">
@@ -146,10 +153,10 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="740" y="334" key="FileChooserDialogImpl/0.0.1920.1160@0.0.1920.1160" timestamp="1612609270183" />
-    <state x="552" y="312" key="Vcs.Push.Dialog.v2" timestamp="1612609600945">
+    <state x="552" y="312" key="Vcs.Push.Dialog.v2" timestamp="1612612883604">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="552" y="312" key="Vcs.Push.Dialog.v2/0.0.1920.1160@0.0.1920.1160" timestamp="1612609600945" />
+    <state x="552" y="312" key="Vcs.Push.Dialog.v2/0.0.1920.1160@0.0.1920.1160" timestamp="1612612883604" />
     <state x="92" y="92" width="1736" height="976" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1612607611819">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
