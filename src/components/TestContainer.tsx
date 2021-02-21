@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import './ExploreContainer.css';
 import {
     IonButton,
-    IonCard, IonCardContent,
+    IonCard,
     IonCardHeader, IonCardTitle, IonDatetime,
     IonInput,
     IonItem,
@@ -21,6 +21,8 @@ const TestContainer: React.FC<ContainerProps> = () => {
 
     const [data, setData] = useState<any>([]);
     const [selected, setSelected]= useState<string>("Freilaufend")
+    const [selectedDate, setSelectedDate] = useState<string>('');
+
 
     const state = {
         id:'',
@@ -60,9 +62,6 @@ const TestContainer: React.FC<ContainerProps> = () => {
     const setAnzahl = (data: any) => {
         state.anzahl = data;
     }
-    const setSelectedDate = (data: any) => {
-        state.selectedDate = data;
-    }
 
     const openTestList = () => {
         saveExperimentToStorage()
@@ -71,6 +70,7 @@ const TestContainer: React.FC<ContainerProps> = () => {
     const saveExperimentToStorage = async () => {
         state.id = uuidv4();
         state.selection = selected;
+        state.selectedDate = selectedDate;
         let ret = await get(data.id);
         if(ret) {
             let obj: Object = JSON.parse(ret);
@@ -100,14 +100,12 @@ const TestContainer: React.FC<ContainerProps> = () => {
             <IonCardHeader>
                 <IonCardTitle>{data.title}</IonCardTitle>
             </IonCardHeader>
-
-            <IonCardContent>{data.description}</IonCardContent>
         </IonCard>
         <IonCard>
 
             <IonItem>
                 <IonLabel>Zeitpunkt</IonLabel>
-                <IonDatetime displayFormat="D MMM YYYY H:mm" min="2021" max="2022" placeholder="Datum auswählen" value={state.selectedDate} onIonChange={(data:any) => setSelectedDate(data.detail.value)}/>
+                <IonDatetime displayFormat="D MMM YYYY H:mm" min="2019" max="2025" placeholder="Datum auswählen" value={selectedDate} onIonChange={e => setSelectedDate(e.detail.value!)}/>
             </IonItem>
             <IonItem>
                 <IonLabel position="floating">Tierart</IonLabel>

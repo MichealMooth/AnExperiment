@@ -54,7 +54,6 @@ const CreateExperimentContainer: React.FC<ContainerProps> = () => {
             }
             let name = "test"+count;
             Object.assign(obj, {[name]:state})
-            console.log(obj);
 
             set(TEST_STORAGE, JSON.stringify(obj));
         } else {
