@@ -3,20 +3,29 @@ import React from 'react';
 import './CreateExperiment.css';
 import TestContainer from "../components/TestContainer";
 
+
 const Test: React.FC = () => {
     return (
         <IonPage>
-            <IonHeader collapse="condense">
+            <IonHeader>
                 <IonToolbar>
                     <IonButtons slot="start">
                         <IonBackButton defaultHref="home"/>
                     </IonButtons>
-                    <IonTitle>Eine neue Testdurchführung anlegen</IonTitle>
+                    <IonTitle>Neue Testdurchführung anlegen</IonTitle>
                 </IonToolbar>
             </IonHeader>
             <IonContent fullscreen>
-
-                <TestContainer />
+                <IonHeader collapse="condense">
+                    <IonToolbar>
+                        <IonButtons slot="start">
+                            <IonBackButton defaultHref="home"/>
+                        </IonButtons>
+                        <IonTitle>Neue Testdurchführung anlegen</IonTitle>
+                        <IonTitle size="large">AnExperiment</IonTitle>
+                    </IonToolbar>
+                </IonHeader>
+                <TestContainer/>
             </IonContent>
         </IonPage>
     );

@@ -11,28 +11,14 @@ interface ContainerProps { }
 const ExploreContainer: React.FC<ContainerProps> = () => {
 
 
-    interface testInterface {
-        id:string,
-        title: string,
-        date: string,
-        description: string,
-        context:string
-
-    }
 
     const TEST_STORAGE = "test";
     const tests: any[] = [];
-    const state = {
-        id:'',
-        title: '',
-        date: new Date(),
-        description: '',
-        context:''
 
-    };
-
-    const { get } = useStorage();
+    const { get, set } = useStorage();
     const [data, setData] = useState<any[]>([]);
+    const ACTIVE_TEST = "activeTest"
+
 
     useIonViewWillEnter(() => {
         async function loadData() {
@@ -44,15 +30,7 @@ const ExploreContainer: React.FC<ContainerProps> = () => {
                     console.log(key);
                     tests.push(value);
                 }
-                for( let test of tests) {
-                    state.id = test.id;
-                    state.title = test.title;
-                    state.date = test.date;
-                    state.description = test.description;
-                    state.context = test.context;
-                }
                 setData(tests);
-                console.log(state);
 
             }
         }
@@ -65,11 +43,12 @@ const ExploreContainer: React.FC<ContainerProps> = () => {
     }
 
     const openTest = (data:any) => {
-
+        set(ACTIVE_TEST, JSON.stringify(data));
     }
     const openTestList = (data:any) => {
-
+        set(ACTIVE_TEST, JSON.stringify(data));
     }
+
 
     return (
     <div className="container">
@@ -77,9 +56,9 @@ const ExploreContainer: React.FC<ContainerProps> = () => {
             <IonItem key={test.title} onClick={() => openTest(test) } routerLink="/test" button>
                 <IonLabel>
                     <h2>{test.title}</h2>
-                    <p>{test.id}</p>
+                    <p>{test.description}</p>
                 </IonLabel>
-                <IonButton expand="block" size="small" onClick={() => openTestList(test)} routerLink="/testList">
+                <IonButton expand="block" size="small" onClick={() => openTestList(test)} routerLink='/testList'>
                     Tests
                 </IonButton>
             </IonItem>

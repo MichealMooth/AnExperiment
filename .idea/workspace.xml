@@ -10,10 +10,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5da46d1e-7d98-4c52-88c7-b1f14d7de1ed" name="Default Changelist" comment="Neue Experimente werden im Speicher abgelegt">
+    <list default="true" id="5da46d1e-7d98-4c52-88c7-b1f14d7de1ed" name="Default Changelist" comment="Neue Experimente werden auf der Home-Seite angezeigt und dienen als Link zur Testdurchführung und Testliste">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/CreateExperimentContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/CreateExperimentContainer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ExploreContainer.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ExploreContainer.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/ExploreContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ExploreContainer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TestContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TestContainer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/CreateExperiment.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/CreateExperiment.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/Test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Test.tsx" afterDir="false" />
     </list>
@@ -92,7 +93,7 @@
       <workItem from="1612605757759" duration="2233000" />
       <workItem from="1612608197718" duration="1069000" />
       <workItem from="1612609543356" duration="10897000" />
-      <workItem from="1613808876566" duration="28187000" />
+      <workItem from="1613808876566" duration="33683000" />
     </task>
     <task id="LOCAL-00001" summary="Created empty Ionic React Project">
       <created>1609659705905</created>
@@ -143,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613825937326</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Neue Experimente werden auf der Home-Seite angezeigt und dienen als Link zur Testdurchführung und Testliste">
+      <created>1613905385148</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1613905385148</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -168,7 +176,8 @@
     <MESSAGE value="Erstes Experiment kann erstellt werden. Grundfunktionalität von Formularen verstanden." />
     <MESSAGE value="erste Version Verbindung zum Lokalen Speicher und dem Filesystem" />
     <MESSAGE value="Neue Experimente werden im Speicher abgelegt" />
-    <option name="LAST_COMMIT_MESSAGE" value="Neue Experimente werden im Speicher abgelegt" />
+    <MESSAGE value="Neue Experimente werden auf der Home-Seite angezeigt und dienen als Link zur Testdurchführung und Testliste" />
+    <option name="LAST_COMMIT_MESSAGE" value="Neue Experimente werden auf der Home-Seite angezeigt und dienen als Link zur Testdurchführung und Testliste" />
   </component>
   <component name="WindowStateProjectService">
     <state x="102" y="110" width="1720" height="960" key="DiffContextDialog" timestamp="1612610116708">
@@ -179,10 +188,10 @@
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
     <state x="740" y="334" key="FileChooserDialogImpl/0.0.1920.1160@0.0.1920.1160" timestamp="1613822434219" />
-    <state x="552" y="312" key="Vcs.Push.Dialog.v2" timestamp="1613825943054">
+    <state x="552" y="312" key="Vcs.Push.Dialog.v2" timestamp="1613905386719">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
-    <state x="552" y="312" key="Vcs.Push.Dialog.v2/0.0.1920.1160@0.0.1920.1160" timestamp="1613825943054" />
+    <state x="552" y="312" key="Vcs.Push.Dialog.v2/0.0.1920.1160@0.0.1920.1160" timestamp="1613905386719" />
     <state x="92" y="92" width="1736" height="976" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1612607611819">
       <screen x="0" y="0" width="1920" height="1160" />
     </state>
