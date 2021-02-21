@@ -1,8 +1,9 @@
 import React from 'react';
 import './ExploreContainer.css';
-import {IonButton, IonFooter, IonInput, IonItem, IonLabel, IonTextarea} from "@ionic/react";
+import {IonButton, IonInput, IonItem, IonLabel, IonTextarea} from "@ionic/react";
 import {useStorage} from "@ionic/react-hooks/storage";
 import { v4 as uuidv4 } from 'uuid';
+
 
 interface ContainerProps {
 }
@@ -12,6 +13,8 @@ const TEST_STORAGE = "test";
 
 const CreateExperimentContainer: React.FC<ContainerProps> = () => {
     const { get, set } = useStorage();
+
+
 
     //initialisieren der Felder
     const state = {
@@ -45,7 +48,8 @@ const CreateExperimentContainer: React.FC<ContainerProps> = () => {
         if(ret) {
             let obj: Object = JSON.parse(ret);
             let count = 1
-            for (const [key, value] of Object.entries(obj)) {
+            for (let i of Object.entries(obj)) {
+                console.log(i);
                 count++
             }
             let name = "test"+count;

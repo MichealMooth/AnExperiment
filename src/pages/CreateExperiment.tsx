@@ -14,7 +14,7 @@ import CreateExperimentContainer from "../components/CreateExperimentContainer";
 const CreateExperiment: React.FC = () => {
     return (
         <IonPage>
-            <IonHeader>
+            <IonHeader collapse="condense">
                 <IonToolbar>
                     <IonButtons slot="start">
                         <IonBackButton defaultHref="home"/>
@@ -23,11 +23,6 @@ const CreateExperiment: React.FC = () => {
                 </IonToolbar>
             </IonHeader>
             <IonContent fullscreen>
-                <IonHeader collapse="condense">
-                    <IonToolbar>
-                        <IonTitle size="large">AnExperiment</IonTitle>
-                    </IonToolbar>
-                </IonHeader>
                 <CreateExperimentContainer/>
             </IonContent>
         </IonPage>

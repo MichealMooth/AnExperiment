@@ -1,26 +1,25 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import {IonBackButton, IonButtons, IonContent, IonHeader, IonPage, IonTitle, IonToolbar} from '@ionic/react';
 import React from 'react';
 import './CreateExperiment.css';
-import CreateExperimentContainer from "../components/CreateExperimentContainer";
+import TestContainer from "../components/TestContainer";
 
-const CreateExperiment: React.FC = () => {
+const Test: React.FC = () => {
     return (
         <IonPage>
-            <IonHeader>
+            <IonHeader collapse="condense">
                 <IonToolbar>
-                    <IonTitle>Blank</IonTitle>
+                    <IonButtons slot="start">
+                        <IonBackButton defaultHref="home"/>
+                    </IonButtons>
+                    <IonTitle>Eine neue Testdurchführung anlegen</IonTitle>
                 </IonToolbar>
             </IonHeader>
             <IonContent fullscreen>
-                <IonHeader collapse="condense">
-                    <IonToolbar>
-                        <IonTitle size="large">AnExperiment</IonTitle>
-                    </IonToolbar>
-                </IonHeader>
-                <CreateExperimentContainer />
+
+                <TestContainer />
             </IonContent>
         </IonPage>
     );
 };
 
-export default CreateExperiment;
+export default Test;
