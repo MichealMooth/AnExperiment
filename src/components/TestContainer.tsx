@@ -8,10 +8,13 @@ import {
     IonItem,
     IonLabel, IonList, IonRadio, IonRadioGroup,
     IonTextarea,
-    useIonViewWillEnter
+    useIonViewWillEnter, IonFabButton, IonIcon
 } from "@ionic/react";
 import {useStorage} from "@ionic/react-hooks/storage";
 import { v4 as uuidv4 } from 'uuid';
+import { usePhotoGallery } from '../hooks/useFileSystem';
+import {camera} from "ionicons/icons";
+
 
 interface ContainerProps { }
 
@@ -47,6 +50,7 @@ const TestContainer: React.FC<ContainerProps> = () => {
 
         loadData();
     }, [data]);
+
 
 
     const getData = () => {
@@ -91,6 +95,9 @@ const TestContainer: React.FC<ContainerProps> = () => {
             set(data.id, JSON.stringify(obj))
         }
     }
+
+    const { takePhoto } = usePhotoGallery();
+
 
 
 
@@ -141,7 +148,14 @@ const TestContainer: React.FC<ContainerProps> = () => {
                 <IonLabel position="floating">Beschreibung der Testdurchführung</IonLabel>
                 <IonTextarea value={state.description} onIonChange={(data: any) => setDescription(data.detail.value)}/>
             </IonItem>
+            <br/>
 
+
+                <IonFabButton onClick={() => takePhoto()}>
+                    <IonIcon icon={camera}/>
+                </IonFabButton>
+
+            <br/>
             <IonButton expand="block" onClick={() => openTestList()} routerLink="/testList">
                 Testdurchlauf speichern
             </IonButton>

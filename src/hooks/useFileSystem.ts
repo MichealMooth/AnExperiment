@@ -1,9 +1,8 @@
-import { useState, useEffect } from "react";
+import { useState  } from "react";
 import { useCamera } from '@ionic/react-hooks/camera';
-import { useFilesystem, base64FromPath } from '@ionic/react-hooks/filesystem';
-import { useStorage } from '@ionic/react-hooks/storage';
-import { isPlatform } from '@ionic/react';
-import { CameraResultType, CameraSource, CameraPhoto, Capacitor, FilesystemDirectory } from "@capacitor/core";
+//import {  base64FromPath } from '@ionic/react-hooks/filesystem';
+//import { useStorage } from '@ionic/react-hooks/storage';
+import { CameraResultType, CameraSource} from "@capacitor/core";
 
 
 export interface Photo {
@@ -11,25 +10,9 @@ export interface Photo {
     webviewPath?: string;
 }
 
-const TEST_STORAGE = "test";
 
-export function useFileSystem() {
-    const { get, set } = useStorage();
-
-
-    const savePicture = async (photo: CameraPhoto, fileName: string): Promise<Photo> => {
-        const base64Data = await base64FromPath(photo.webPath!);
-        /*const savedFile = await writeFile({
-            path: fileName,
-            data: base64Data,
-            directory: FilesystemDirectory.Data
-        });*/
-        return {
-            filepath: fileName,
-            webviewPath: photo.webPath
-        };
-    };
-
+export function usePhotoGallery() {
+    //const { get, set } = useStorage();
 
 
 
@@ -55,4 +38,21 @@ export function useFileSystem() {
         photos,
         takePhoto
     };
+
+
+    /*const savePicture = async (photo: CameraPhoto, fileName: string): Promise<Photo> => {
+        const base64Data = await base64FromPath(photo.webPath!);
+        const savedFile = await writeFile({
+            path: fileName,
+            data: base64Data,
+            directory: FilesystemDirectory.Data
+        });
+        return {
+            filepath: fileName,
+            webviewPath: photo.webPath
+        };
+    };*/
+
+
+
 }

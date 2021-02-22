@@ -75,11 +75,11 @@ const CreateExperimentContainer: React.FC<ContainerProps> = () => {
             </IonItem>
             <IonItem>
                 <IonLabel position="floating">Beschreibung</IonLabel>
-                <IonTextarea value={state.description} onIonChange={(data: any) => setDescription(data.detail.value)}/>
+                <IonTextarea value={state.description} rows={4} onIonChange={(data: any) => setDescription(data.detail.value)}/>
             </IonItem>
             <IonItem>
                 <IonLabel position="floating">Kontext</IonLabel>
-                <IonTextarea value={state.context} onIonChange={(data: any) => setKontext(data.detail.value)}/>
+                <IonTextarea value={state.context} rows={4} onIonChange={(data: any) => setKontext(data.detail.value)}/>
             </IonItem>
 
             <IonButton expand="block" onClick={e => createExperiment(e)} routerLink="/home">

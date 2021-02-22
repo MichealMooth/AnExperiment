@@ -54,7 +54,7 @@ const TestListContainer: React.FC<ContainerProps> = () => {
     }
 
     const openTest=(data:any) => {
-        set(ACTIVE_TEST, JSON.stringify(data));
+        set("aktiverTestlauf", JSON.stringify(data));
     }
 
     return (
@@ -66,19 +66,17 @@ const TestListContainer: React.FC<ContainerProps> = () => {
                 <IonCardContent>{activeExperiment.description}</IonCardContent>
             </IonCard>
             {data.map(testlauf => (
-                <IonCard onClick={() => openTest(testlauf) }  button>
-
+                <IonCard key={testlauf.id} onClick={() => openTest(testlauf) } routerLink="/testDetail" button>
                     <IonCardContent>
                         <IonLabel>Zeitpunkt der Durchführung</IonLabel>
                         <IonItem>
-                            <IonDatetime disabled displayFormat="D MMM YYYY H:mm" min="2019" max="2025" value={testlauf.selectedDate} />
+                            <IonDatetime readonly displayFormat="D MMM YYYY H:mm" min="2019" max="2025" value={testlauf.selectedDate} />
                         </IonItem>
                         <IonLabel>Beschreibung</IonLabel>
                         <IonItem>
                                 {testlauf.description}
                         </IonItem>
                     </IonCardContent>
-
                 </IonCard>
             ))
             }
